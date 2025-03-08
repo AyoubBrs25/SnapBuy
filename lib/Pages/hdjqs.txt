@@ -1,0 +1,22 @@
+onPressed: () async {
+                                          final picker = ImagePicker();
+                                          final pickedimg =
+                                          await picker.pickImage(
+                                              source:
+                                              ImageSource.camera);
+
+                                          Navigator.pop(context);
+
+                                          if (pickedimg == null) {
+                                            setState(() {});
+                                          }
+                                          ;
+
+                                          if (isFile == false) {
+                                            final file =
+                                            File(pickedimg!.path);
+                                            setState(() {
+                                              prfimg = file;
+                                            });
+                                          }
+                                        },
