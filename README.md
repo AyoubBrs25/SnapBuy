@@ -23,7 +23,7 @@ This project serves as the foundation for a scalable and feature-rich e-commerce
    ```
 2. Navigate to the project directory:
    ```sh
-   cd snapbuy
+   cd Snapbuy
    ```
 3. Install dependencies:
    ```sh
